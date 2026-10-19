@@ -1,68 +1,35 @@
-﻿# Agenda Veterinaria
+﻿# ðŸ¾ Agenda Veterinaria
 
-Sistema de agenda de citas medicas de una veterinaria con mascotas, veterinarios y asignacion de citas.
+Sistema de agenda de citas mÃ©dicas de una veterinaria con mascotas, veterinarios y asignaciÃ³n de citas.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Consola (MVC) |
-| Archivos Java | 9 |
-| Version de Java | 21 |
-| Patron | Incluye una clase Demo con metodo main para poder ejecutar una demostracion |
+- GestiÃ³n de mascotas y veterinarios
+- Agendamiento de citas mÃ©dicas
+- Sistema de agenda de veterinaria
+- Clase demo (`Demo.java`) para ejecutar directamente
+- Interfaz por consola
+- Arquitectura MVC
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- Registro de mascotas con validacion de duplicados
-- Registro de veterinarios
-- Agenda por identificacion de veterinario
-- Persistencia DAO con archivo
-- Conversion a DTO para persistencia
+- Java
+- Maven
+- PatrÃ³n MVC
 
-## Estructura del proyecto
-
-```
-registroVeterinaria/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/registroVeterinaria.git
+cd registroVeterinaria
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="Demo"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.Demo
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
